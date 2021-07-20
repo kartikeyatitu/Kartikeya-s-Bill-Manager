@@ -26,3 +26,6 @@ I have made a single page application -> It can be converted to multi-page appli
 UI can be improved.
 
 ![Img1](img/bill1.png)
+![Img1](img/bill2.png)
+![Img1](img/bill3.png)
+![Img1](img/bill4.png)
