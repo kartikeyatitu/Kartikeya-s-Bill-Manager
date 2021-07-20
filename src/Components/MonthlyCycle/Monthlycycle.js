@@ -7,25 +7,29 @@ import Chart from '../Chart/Chart';
 import './Monthlycycle.css'
 
 export default function MonthlyCycle() {
-const  billers = useSelector(state => state)
+
 const [series, setSeries] = useState([]);
 const [selectedYear, setSelectedYear] = useState("2021")
+const  bills = useSelector(state => state)
 
-useEffect(() => {
-    generateGraphData()
-}, [billers,selectedYear])
 const generateGraphData = () => {
     let seriesList = [0,0,0,0,0,0,0,0,0,0,0,0];
-    billers.forEach(bill => {
-        let date = bill.date;
-        let year = date.split('-')[2];
-        let month = parseInt(date.split('-')[0]);
-        let day = date.split('-')[1];
+    for (const bill of bills) {
+           
+        let date =  bill.date;
+        
+        let year = date?.split('-')[2];
+   
+        let month = parseInt(date?.split('-')[0]);
+        let day = date?.split('-')[1];
         if(year === selectedYear)
         seriesList[month-1] += parseInt(bill.amount)
-    });
+    };
     setSeries(seriesList);
 }
+useEffect(() => {
+    generateGraphData();
+}, [bills,selectedYear])
 const handleYearChange = (event) => {
     
     setSelectedYear(event.target.value);
@@ -46,7 +50,7 @@ return (
                 </select>
             </div>
         </div>
-        <Chart style={{color:'black'}} series={series} year={selectedYear}></Chart>
+        <Chart  series={series} year={selectedYear}></Chart>
     </div>
 )
 }

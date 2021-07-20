@@ -68,6 +68,7 @@ const AddBiller = () => {
             <div>
                 <select id="add-biller-category" className="add-biller-category" value={category} onChange={e => addFieldToPayload(e, 'category')}>
                     <option value="">Select Category</option>
+                    <option value="Food N Dining">Food N Dining</option>
                     <option value="Shopping">Shopping</option>
                     <option value="Education">Education</option>
                     <option value="Personal Care">Personal Care</option>
