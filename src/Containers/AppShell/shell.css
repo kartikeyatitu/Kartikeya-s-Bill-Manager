@@ -1,0 +1,31 @@
+
+button.Button--secondary {
+    border: solid 2px #333;
+    background-color: black;
+
+    color: blanchedalmond;
+    font-size: 13px;
+    width: 96%;
+    padding: 6px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    max-width: 140px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.app-shell {
+    
+    
+    background-color: #f7f7f7;
+    min-height: 100vh;
+    
+    background: url("https://images.unsplash.com/photo-1512075135822-67cdd9dd7314?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjR8fG1vbmV5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60") no-repeat center center/2000px 1500px fixed
+    
+}
+
+.dashboard {
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+}
