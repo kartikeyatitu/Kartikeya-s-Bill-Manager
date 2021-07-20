@@ -24,3 +24,8 @@ Futher Improvements That Can be Made are->
 Using Bootstap Datatables to diplay list of biils and functionality of delete and edit .
 I have made a single page application -> It can be converted to multi-page application by adding appropriate routes in react.
 UI can be improved.
+
+![Img1](img/bill1.png)
+![Img1](img/bill2.png)
+![Img1](img/bill3.png)
+![Img1](img/bill4.png)
