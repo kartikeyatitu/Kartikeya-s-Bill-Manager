@@ -5,8 +5,8 @@ import HighchartsReact from 'highcharts-react-official'
 export default function Chart(props) {
     const options = {
         chart: {
-
-            backgroundColor: '#b8b1b1',
+           
+            backgroundColor: 'rgb(238, 236, 236)',
             type: 'line',
        
         },

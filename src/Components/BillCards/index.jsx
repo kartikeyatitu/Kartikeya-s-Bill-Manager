@@ -53,7 +53,7 @@ const BillCards = () => {
         <div className="card">
             <div className="half-cards">
                 <input type="text" value={thresholdInput} onChange={e => setThresholdInput(e.currentTarget.value)} />
-                <label>Set budget for month</label>
+                <label>Set Budget(Monthly)</label>
                 <button onClick={setMonthlyLimit}>Set</button>
             </div>
 
